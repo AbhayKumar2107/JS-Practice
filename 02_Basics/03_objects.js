@@ -88,3 +88,30 @@ JsUser.greetingTwo = function(){
 
 console.log(JsUser.greeting());  // return function
 console.log(JsUser.greetingTwo());
+
+// =================================================================================//
+
+//Object methods:
+//These are used like: Object.methodName(obj).
+
+//1.Object.keys(): Returns all keys of an object
+console.log(Object.keys(user));
+// ["name", "age"]
+
+
+//2. Object.values(): Returns all value.
+console.log(Object.values(user));
+// ["Abhay", 22]
+
+
+//3.Object.entries(): 
+console.log(Object.entries(user));
+// [["name", "Abhay"], ["age", 22]]
+
+
+//4.Object.assign(): Copies properties from one object to another.
+const obj3 = { a: 1 };
+const obj2 = { b: 2 };
+const result = Object.assign({}, obj3, obj2);
+console.log(result);
+// { a: 1, b: 2 }
